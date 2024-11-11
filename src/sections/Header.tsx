@@ -4,7 +4,8 @@ import MenuIcon from "@/assets/menu.svg";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0">
+    // Nav blur effect
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">¡Bienvenidos!</p>
         <div className="inline-flex gap-1 items-center">
@@ -20,8 +21,8 @@ export const Header = () => {
               <a href="#">About</a>
               <a href="#">Showcase</a>
               <a href="#">Goals</a>
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
-                Contact me
+              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+                Get in touch
               </button>
             </nav>
           </div>
