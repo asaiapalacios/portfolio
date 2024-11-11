@@ -10,7 +10,9 @@ export const LogoTicker = () => {
   return (
     <div className="bg-white">
       <div className="container">
+        {/* Gradient ticker effect */}
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+          {/* Gap between skills */}
           <div className="flex gap-20 flex-none">
             <Image
               src={htmlLogo}
