@@ -1,9 +1,10 @@
-import htmlLogo from "@/assets/logo-html-canva.png";
+import htmlLogo from "@/assets/logo-html.png";
 import cssLogo from "@/assets/logo-css-canva.png";
-import javascriptLogo from "@/assets/logo-javascript-canva.png";
-import uiLogo from "@/assets/logo-ui-canva.png";
-import uxLogo from "@/assets/logo-ux-canva.png";
-import reactLogo from "@/assets/logo-react-canva.png";
+import javascriptLogo from "@/assets/logo-javascript.png";
+import uiLogo from "@/assets/logo-ui.png";
+import uxLogo from "@/assets/logo-ux.png";
+import figmaLogo from "@/assets/logo-figma.png";
+import reactLogo from "@/assets/logo-react.png";
 import Image from "next/image";
 
 export const LogoTicker = () => {
@@ -27,6 +28,11 @@ export const LogoTicker = () => {
             />
             <Image src={uxLogo} alt="UX Logo" className="logo-ticker-image" />
             <Image src={uiLogo} alt="UI Logo" className="logo-ticker-image" />
+            <Image
+              src={figmaLogo}
+              alt="Figma Logo"
+              className="logo-ticker-image"
+            />
             <Image
               src={reactLogo}
               alt="React Logo"

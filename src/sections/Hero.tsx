@@ -11,7 +11,7 @@ export const Hero = () => {
         {/* Image placed appropriately per screen size */}
         <div className="md:flex items-center">
           {/* Wrap our content */}
-          <div className="md:w-[478px]">
+          <div className="md:w-[378px] lg:w-[478px]">
             <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
               Product Designer
             </div>
@@ -19,8 +19,9 @@ export const Hero = () => {
               Asaia Palacios
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              From web development to UX design, I am on a journey to design for
-              3D experiences - ahem, augmented reality in emerging tech!
+              From building websites to UX design, I am on a journey to design
+              accesssible and interactive 3D experiences for augmented reality
+              wearables - smart glasses!
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Get in touch</button>
@@ -32,14 +33,14 @@ export const Hero = () => {
             <Image
               src={asaiaImage}
               alt="Asaia image"
-              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-40 lg:-left-12"
+              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-20 lg:-left-6"
             />
             <Image
               src={cylinderImage}
               width={150}
               height={150}
               alt="Cylinder image"
-              className="hidden md:block -top-8 -left-32 md:absolute lg:-left-16"
+              className="hidden md:block -top-8 -left-24 md:absolute lg:-left-10"
             />
             <Image
               src={noodleImage}
