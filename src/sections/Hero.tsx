@@ -12,9 +12,7 @@ export const Hero = () => {
         <div className="md:flex items-center">
           {/* Wrap our content */}
           <div className="md:w-[378px] lg:w-[478px]">
-            <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
-              Product Designer
-            </div>
+            <div className="tag">Product Designer</div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
               Asaia Palacios
             </h1>
@@ -37,16 +35,16 @@ export const Hero = () => {
             />
             <Image
               src={cylinderImage}
-              width={150}
-              height={150}
+              width={160}
+              height={160}
               alt="Cylinder image"
               className="hidden md:block -top-8 -left-24 md:absolute lg:-left-10"
             />
             <Image
               src={noodleImage}
-              width={150}
+              width={175}
               alt="Noodle image"
-              className="hidden lg:block absolute top-[578px] left-[488px] rotate-[30deg]"
+              className="hidden lg:block absolute top-[558px] left-[488px] rotate-[30deg]"
             />
           </div>
         </div>

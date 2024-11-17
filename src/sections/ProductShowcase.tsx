@@ -1,57 +1,48 @@
-"use client";
-import productImage from "@/assets/product-image.png";
+import productImage from "@/assets/product-image-screen.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 export const ProductShowcase = () => {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
-    <section
-      ref={sectionRef}
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
-    >
+    // Style tag, heading, paragraph, product image, and 3d images
+    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-14 overflow-x-clip">
       <div className="container">
-        <div className="section-heading">
-          <div className="flex justify-center">
-            <div className="tag">Boost your productivity</div>
+        {/* Should `max-w-auto` be included in div below? */}
+        <div className="max-w-[1000px] mx:auto">
+          <div className="flex justify-left">
+            <div className="tag">Design Showcase</div>
           </div>
-          <h2 className="section-title mt-5">
-            A more effective way to track progress
+          <h2 className="text-left text-3xl md:text-[48px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
+            Non-profit client web and mobile redesign
           </h2>
-          <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, responsive,
-            SaaS website in just minutes with this template.
+          <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+            Poder NC's former website was due for a revamp. A team of 3
+            developers and I aimed to bring to light the organization's true
+            vibrant nature and values behind the nonprofit's work towards
+            educating North Carolinians on public issues affecting the Latinx
+            community.
+          </p>
+          <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+            From a black somber website to a responsive one that brings at the
+            forefront Poder's colors, flair, and energy, the redesign sought to
+            increase website engagement and community.
           </p>
         </div>
         <div className="relative">
-          <Image src={productImage} alt="Product Image" className="mt-10" />
-          <motion.img
-            src={pyramidImage.src}
+          <Image src={productImage} alt="Product Image" className="" />
+          <Image
+            src={pyramidImage}
             alt="Pyramid Image"
-            height={262}
-            width={262}
-            className="hidden md:block absolute -right-36 -top-32"
-            style={{
-              translateY,
-            }}
+            height={185}
+            width={185}
+            className="hidden md:block absolute -right-16 -top-4"
           />
-          <motion.img
-            src={tubeImage.src}
-            alt="Tube image"
-            height={248}
-            width={248}
-            className="hidden md:block absolute bottom-24 -left-36"
-            style={{
-              translateY,
-            }}
+          <Image
+            src={tubeImage}
+            alt="Tube Image"
+            height={200}
+            className="hidden md:block absolute bottom-56 -left-24"
           />
         </div>
       </div>
