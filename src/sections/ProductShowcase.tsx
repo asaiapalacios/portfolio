@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import productImage from "@/assets/product-image-screen.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
