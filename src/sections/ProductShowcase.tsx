@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import productImage from "@/assets/product-image-screen.png";
 import pyramidImage from "@/assets/pyramid.png";
-import tubeImage from "@/assets/tube.png";
+// import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
 
 export const ProductShowcase = () => {
@@ -20,9 +20,9 @@ export const ProductShowcase = () => {
           <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
             Poder NC's former website was due for a revamp. A team of 3
             developers and I aimed to bring to light the organization's true
-            vibrant nature and values behind the nonprofit's work towards
-            educating North Carolinians on public issues affecting the Latinx
-            community.
+            vibrant nature and values behind the nonprofit's work of educating
+            and empowering North Carolinians on public issues affecting the
+            Latinx community.
           </p>
           <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
             From a black somber website to a responsive one that brings at the
@@ -39,12 +39,13 @@ export const ProductShowcase = () => {
             width={185}
             className="hidden md:block absolute -right-16 -top-4"
           />
-          <Image
+          {/* Most likely not include donut image; Testing for now */}
+          {/* <Image
             src={tubeImage}
             alt="Tube Image"
             height={200}
-            className="hidden md:block absolute bottom-56 -left-24"
-          />
+            className="hidden lg:block absolute bottom-56 -left-24"
+          /> */}
         </div>
       </div>
     </section>

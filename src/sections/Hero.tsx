@@ -17,9 +17,9 @@ export const Hero = () => {
               Asaia Palacios
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              From building websites to UX design, I am on a journey to design
-              accesssible and interactive 3D experiences for augmented reality
-              wearables - smart glasses!
+              From building websites with code to designing sites, I am on a
+              journey to design accesssible and interactive 3D user experiences
+              for smart wearable tech - augmented reality glasses!
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Get in touch</button>
@@ -35,10 +35,10 @@ export const Hero = () => {
             />
             <Image
               src={cylinderImage}
-              width={160}
-              height={160}
+              width={175}
+              height={175}
               alt="Cylinder image"
-              className="hidden md:block -top-8 -left-24 md:absolute lg:-left-10"
+              className="hidden md:block -top-10 -left-24 md:absolute lg:-left-14"
             />
             <Image
               src={noodleImage}
