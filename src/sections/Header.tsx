@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    // Nav blur effect
-    <header className="sticky top-0 backdrop-blur-sm z-20">
+    // Nav blur effect = backdrop-blur-sm (removed it from header <> for the time being)
+    <header className="sticky top-0 z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">¡Bienvenidos!</p>
         <div className="inline-flex gap-1 items-center">
