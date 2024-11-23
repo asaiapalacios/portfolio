@@ -14,17 +14,17 @@ export const ProductShowcase = () => {
           <div className="flex justify-left">
             <div className="tag">Design Showcase</div>
           </div>
-          <h2 className="text-left text-3xl md:text-[48px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-5">
+          <h2 className="text-left text-3xl md:text-[48px] md:leading-[60px] section-title mt-5">
             Non-profit client web and mobile redesign
           </h2>
-          <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+          <p className="text-left section-description mt-5">
             Poder NC's former website was due for a revamp. A team of 3
-            developers and I aimed to bring to light the organization's true
-            vibrant nature and values behind the nonprofit's work of educating
-            and empowering North Carolinians on public issues affecting the
-            Latinx community.
+            developers and I collaborated to bring to light the organization's
+            true vibrant nature and values behind the nonprofit's work of
+            educating and empowering North Carolinians on public issues
+            affecting the Latinx community.
           </p>
-          <p className="text-left text-[22px] leading-[30px] tracking-tight text-[#010D3E] mt-5">
+          <p className="text-left section-description mt-5">
             From a black somber website to a responsive one that brings at the
             forefront Poder's colors, flair, and energy, the redesign sought to
             increase website engagement and community.
