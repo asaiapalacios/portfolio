@@ -15,10 +15,11 @@ export const CallToAction = () => {
             asaiavpalacios@gmail.com
           </h2>
           <p className="text-center section-description mt-5">
-            This responsive webpage - available for view in desktop, tablet, and
-            mobile - was built and customized using code (Hello, former web dev
-            here). Thank you, Frontend Tribe, for the online tutorial and the
-            starting template.
+            This responsive webpage - available for view in desktop and tablet -
+            was built and customized using code.
+          </p>
+          <p className="text-center section-description mt-5">
+            (Hello, former web dev here)
           </p>
           <Image
             src={starImage}
