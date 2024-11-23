@@ -35,9 +35,9 @@ export const ProductShowcase = () => {
           <Image
             src={pyramidImage}
             alt="Pyramid Image"
-            height={185}
-            width={185}
-            className="hidden md:block absolute -right-16 -top-4"
+            height={225}
+            width={225}
+            className="hidden md:block absolute -right-20 -top-10 lg:-top-4"
           />
           {/* Most likely not include donut image; Testing for now */}
           {/* <Image
