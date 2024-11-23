@@ -22,9 +22,11 @@ export const Header = () => {
               <Link href="#hero">About</Link>
               <Link href="#showcase">Showcase</Link>
               {/* <Link href="#"><a>Goals</a></Link> */}
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
-                Get in touch
-              </button>
+              <Link href="#footer">
+                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+                  Get in touch
+                </button>
+              </Link>
             </nav>
           </div>
         </div>

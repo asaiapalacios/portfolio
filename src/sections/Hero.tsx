@@ -2,6 +2,7 @@ import asaiaImage from "@/assets/asaia-web.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -25,8 +26,12 @@ export const Hero = () => {
               for smart wearable tech - augmented reality glasses!
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Get in touch</button>
-              <button className="btn btn-text">Learn more</button>
+              <Link href="#cta">
+                <button className="btn btn-primary">Get in touch</button>
+              </Link>
+              <Link href="#showcase">
+                <button className="btn btn-text">Learn more</button>
+              </Link>
             </div>
           </div>
           {/* Wrap our image */}

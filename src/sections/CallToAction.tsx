@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export const CallToAction = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip">
+    <section
+      id="cta"
+      className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip"
+    >
       <div className="container">
         <div className="max-w-[540px] mx-auto relative">
           <div className="flex justify-center">
