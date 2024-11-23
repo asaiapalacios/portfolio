@@ -7,7 +7,10 @@ import Image from "next/image";
 export const ProductShowcase = () => {
   return (
     // Style tag, heading, paragraph, product image, and 3d images
-    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-14 overflow-x-clip">
+    <section
+      id="showcase"
+      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-14 overflow-x-clip"
+    >
       <div className="container">
         {/* Should `max-w-auto` be included in div below? */}
         <div className="max-w-[1000px] mx:auto">

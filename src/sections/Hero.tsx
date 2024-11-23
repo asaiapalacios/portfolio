@@ -6,7 +6,10 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     // Gradient effect
-    <section className="pt-8 pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_95%)] overflow-x-clip">
+    <section
+      id="hero"
+      className="pt-8 pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_95%)] overflow-x-clip"
+    >
       <div className="container">
         {/* Image placed appropriately per screen size */}
         <div className="md:flex items-center">
