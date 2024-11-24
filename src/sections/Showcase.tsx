@@ -25,16 +25,18 @@ export const Showcase = () => {
             Client "Help" page redesign
           </h2>
           <p className="text-left section-description mt-5">
-            Poder NC's former website was due for a revamp. A team of 3
-            developers and I collaborated to bring to light the organization's
-            true vibrant nature and values behind the nonprofit's work of
-            educating and empowering North Carolinians on public issues
-            affecting the Latinx community. Lorem ipsum.
+            Vamos, the farmworker outreach desktop app, was missing a "Help"
+            page for health and legal clients to access the resources that
+            benefit and inform their work. After studying and researching the
+            best design layout that suits the needs of the content - hyperlinks,
+            an embedded Airtable bug form, and a contact section - the Vamos
+            "Help" page was born (left design).
           </p>
           <p className="text-left section-description mt-5">
-            From a black somber website to a responsive one that brings at the
-            forefront Poder's colors, flair, and energy, the redesign sought to
-            increase website engagement and community. Lorem ipsum.
+            Over the course of Vamos' redesign overhaul, I went in another
+            design-layout direction to respect the Design Lead's already
+            established design elements while staying true to the resources the
+            health and legal groups refer to and need (right design).
           </p>
         </div>
         <div className="relative">
