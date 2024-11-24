@@ -27,14 +27,14 @@ export const CallToAction = () => {
           <Image
             src={starImage}
             alt="Star Image"
-            width={300}
+            width={250}
             className="hidden md:block absolute md:-left-[275px] lg:-left-[350px] -top-[137px]"
           />
           <Image
             src={springImage}
             alt="Sprint Image"
             width={300}
-            className="hidden md:block absolute md:-right-[290px] lg:-right-[337px] -bottom-[145px]"
+            className="hidden md:block absolute md:-right-[290px] lg:-right-[405px] -bottom-[145px]"
           />
         </div>
       </div>

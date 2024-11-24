@@ -1,54 +1,62 @@
+// export const Showcase = () => {
+//   return "hola bola";
+// };
+
 /* eslint-disable react/no-unescaped-entities */
-import productImage from "@/assets/product-image-screen.png";
-import pyramidImage from "@/assets/pyramid.png";
-// import tubeImage from "@/assets/tube.png";
+import productImageLaptop from "@/assets/product-image-laptop.png";
+// import pyramidImage from "@/assets/pyramid.png";
+import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
 
-export const ProductShowcase = () => {
+export const Showcase = () => {
   return (
     // Style tag, heading, paragraph, product image, and 3d images
     <section
-      id="showcase"
+      id="showcase2"
       className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-14 overflow-x-clip"
     >
       <div className="container">
         {/* Should `max-w-auto` be included in div below? */}
         <div className="max-w-[1000px] mx:auto">
           <div className="flex justify-left">
-            <div className="tag">Design Showcase #1</div>
+            <div className="tag">Design Showcase #2</div>
           </div>
           <h2 className="text-left text-3xl md:text-[48px] md:leading-[60px] section-title mt-5">
-            Non-profit client web and mobile redesign
+            Client "Help" page redesign
           </h2>
           <p className="text-left section-description mt-5">
             Poder NC's former website was due for a revamp. A team of 3
             developers and I collaborated to bring to light the organization's
             true vibrant nature and values behind the nonprofit's work of
             educating and empowering North Carolinians on public issues
-            affecting the Latinx community.
+            affecting the Latinx community. Lorem ipsum.
           </p>
           <p className="text-left section-description mt-5">
             From a black somber website to a responsive one that brings at the
             forefront Poder's colors, flair, and energy, the redesign sought to
-            increase website engagement and community.
+            increase website engagement and community. Lorem ipsum.
           </p>
         </div>
         <div className="relative">
-          <Image src={productImage} alt="Product Image" className="" />
           <Image
+            src={productImageLaptop}
+            alt="Product Image Laptop"
+            className=""
+          />
+          {/* <Image
             src={pyramidImage}
             alt="Pyramid Image"
             height={225}
             width={225}
             className="hidden md:block absolute -right-20 -top-10 lg:-top-4"
-          />
+          /> */}
           {/* Most likely not include donut image; Testing for now */}
-          {/* <Image
+          <Image
             src={tubeImage}
             alt="Tube Image"
-            height={200}
-            className="hidden lg:block absolute bottom-56 -left-24"
-          /> */}
+            height={225}
+            className="hidden md:block lg:block absolute top-6 -left-20"
+          />
         </div>
       </div>
     </section>
