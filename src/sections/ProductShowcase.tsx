@@ -9,7 +9,7 @@ export const ProductShowcase = () => {
     // Style tag, heading, paragraph, product image, and 3d images
     <section
       id="showcase"
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-14 overflow-x-clip"
+      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-16 overflow-x-clip"
     >
       <div className="container">
         {/* Should `max-w-auto` be included in div below? */}
