@@ -21,9 +21,27 @@ export const Footer = () => {
           <Link href="#showcase">Showcase</Link>
         </nav>
         <div className="flex justify-center gap-6 mt-6">
-          <SocialLinkedIn />
-          <SocialGitHub width={24} height={24} />
-          <SocialX />
+          <Link
+            href="https://www.linkedin.com/in/asaiapalacios/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialLinkedIn />
+          </Link>
+          <Link
+            href="https://github.com/asaiapalacios"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialGitHub width={24} height={24} />
+          </Link>
+          <Link
+            href="https://x.com/AsaiaDesigns"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialX />
+          </Link>
         </div>
         <p className="mt-6">&copy; 2024. All rights reserved.</p>
         <p>
