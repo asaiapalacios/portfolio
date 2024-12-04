@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    // Nav blur effect = backdrop-blur-sm (removed it from header <> for the time being)
-    <header className="sticky top-0 z-20">
+    // Nav blur effect = backdrop-blur-sm (modified it to lg in header <> for the time being)
+    <header className="sticky top-0 z-20 backdrop-blur-lg">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">¡Bienvenidos!</p>
         <div className="inline-flex gap-1 items-center">
@@ -18,7 +18,8 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             <Image src={Logo} alt="Logo" height={40} width={40} />
             <MenuIcon className="h-5 w-5 md:hidden" />
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
+            {/* Remove applying 60% opacity to black text. Original -> text-black/60 */}
+            <nav className="hidden md:flex gap-6 text-black items-center">
               <Link href="#hero">About</Link>
               <Link href="#showcase">Showcase</Link>
               {/* <Link href="#"><a>Goals</a></Link> */}
