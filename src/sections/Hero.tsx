@@ -67,22 +67,22 @@ export const Hero = () => {
                 ease: "easeInOut",
               }}
             />
-            {/* Use parallax effect for cylinder and noodle imaages */}
+            {/* Use parallax effect for cylinder and noodle images */}
             <motion.img
               src={cylinderImage.src}
-              width={175}
-              height={175}
+              width={195}
+              height={195}
               alt="Cylinder image"
-              className="hidden md:block -top-10 -left-24 md:absolute lg:-left-14"
+              className="hidden md:block -top-10 -left-28 md:absolute lg:-left-14"
               style={{
                 translateY: translateY,
               }}
             />
             <motion.img
               src={noodleImage.src}
-              width={175}
+              width={205}
               alt="Noodle image"
-              className="hidden lg:block absolute top-[558px] left-[488px] rotate-[30deg]"
+              className="hidden lg:block absolute top-[528px] left-[488px] rotate-[30deg]"
               style={{
                 rotate: 30,
                 translateY: translateY,
