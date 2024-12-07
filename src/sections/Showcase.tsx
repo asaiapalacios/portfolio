@@ -1,14 +1,25 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import productImageTablet from "@/assets/product-image-tablets.png";
 // import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export const Showcase = () => {
+  const section2Ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: section2Ref,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [-150, 150]);
+
   return (
     // Style tag, heading, paragraph, product image, and 3d images
     <section
       id="showcase2"
+      ref={section2Ref}
       className="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] pt-24 pb-16 overflow-x-clip"
     >
       <div className="container">
@@ -50,11 +61,15 @@ export const Showcase = () => {
             height={225}
             className="hidden md:block lg:block absolute top-1 -left-40"
           /> */}
-          <Image
-            src={tubeImage}
+          <motion.img
+            src={tubeImage.src}
             alt="Tube Image"
             height={225}
-            className="hidden md:block absolute -right-20 -top-16 lg:-top-10"
+            width={225}
+            className="hidden md:block absolute -right-20 -top-10 lg:top-2"
+            style={{
+              translateY,
+            }}
           />
         </div>
       </div>

@@ -1,14 +1,25 @@
+"use client";
 /* eslint-disable react/no-unescaped-entities */
 import productImage from "@/assets/product-image-screen.png";
 import pyramidImage from "@/assets/pyramid.png";
-// import tubeImage from "@/assets/tube.png";
+import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export const ProductShowcase = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [-150, 150]);
+
   return (
     // Style tag, heading, paragraph, product image, and 3d images
     <section
       id="showcase"
+      ref={sectionRef}
       className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] pt-24 pb-16 overflow-x-clip"
     >
       <div className="container">
@@ -36,20 +47,26 @@ export const ProductShowcase = () => {
         </div>
         <div className="relative">
           <Image src={productImage} alt="Product Image" className="" />
-          <Image
-            src={pyramidImage}
+          <motion.img
+            src={pyramidImage.src}
             alt="Pyramid Image"
             height={225}
             width={225}
             className="hidden md:block absolute -right-20 -top-10 lg:-top-4"
+            style={{
+              translateY,
+            }}
           />
-          {/* Most likely not include donut image; Testing for now */}
-          {/* <Image
-            src={tubeImage}
+          <motion.img
+            src={tubeImage.src}
             alt="Tube Image"
-            height={200}
-            className="hidden lg:block absolute bottom-56 -left-24"
-          /> */}
+            height={225}
+            width={225}
+            className="hidden lg:block absolute bottom-60 -left-24"
+            style={{
+              translateY,
+            }}
+          />
         </div>
       </div>
     </section>
