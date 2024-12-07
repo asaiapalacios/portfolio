@@ -1,13 +1,29 @@
+"use client";
 import asaiaImage from "@/assets/asaia-web.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef } from "react";
 
 export const Hero = () => {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
   return (
     // Gradient effect
     <section
+      ref={heroRef}
       id="hero"
       className="pt-8 pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_95%)] overflow-x-clip"
     >
@@ -34,25 +50,43 @@ export const Hero = () => {
               </Link>
             </div>
           </div>
-          {/* Wrap our image */}
+          {/* Wrap our image  */}
           <div className="mt-10 md:mt-0 md:h-[648px] md:flex-1 relative">
-            <Image
-              src={asaiaImage}
+            {/* Asaia image in motion - up and down effect */}
+            <motion.img
+              src={asaiaImage.src}
               alt="Asaia image"
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-20 lg:-left-6"
+              animate={{
+                translateY: [-10, 10],
+              }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "mirror",
+                duration: 3,
+                ease: "easeInOut",
+              }}
             />
-            <Image
-              src={cylinderImage}
+            {/* Use parallax effect for cylinder and noodle imaages */}
+            <motion.img
+              src={cylinderImage.src}
               width={175}
               height={175}
               alt="Cylinder image"
               className="hidden md:block -top-10 -left-24 md:absolute lg:-left-14"
+              style={{
+                translateY: translateY,
+              }}
             />
-            <Image
-              src={noodleImage}
+            <motion.img
+              src={noodleImage.src}
               width={175}
               alt="Noodle image"
               className="hidden lg:block absolute top-[558px] left-[488px] rotate-[30deg]"
+              style={{
+                rotate: 30,
+                translateY: translateY,
+              }}
             />
           </div>
         </div>
