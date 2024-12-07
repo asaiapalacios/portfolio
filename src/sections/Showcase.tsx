@@ -8,9 +8,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export const Showcase = () => {
-  const section2Ref = useRef(null);
+  const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: section2Ref,
+    target: sectionRef,
     offset: ["start end", "end start"],
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [-150, 150]);
@@ -19,7 +19,7 @@ export const Showcase = () => {
     // Style tag, heading, paragraph, product image, and 3d images
     <section
       id="showcase2"
-      ref={section2Ref}
+      ref={sectionRef}
       className="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] pt-24 pb-16 overflow-x-clip"
     >
       <div className="container">
