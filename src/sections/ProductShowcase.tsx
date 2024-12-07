@@ -21,7 +21,7 @@ export const ProductShowcase = () => {
             Non-profit client web and mobile redesign
           </h2>
           <p className="text-left section-description mt-5">
-            Poder NC's former website was due for a revamp. A team of 3
+            Poder NC's former website was due for a revamp. A team of 2
             developers and I collaborated to bring to light the organization's
             true vibrant nature and values behind the nonprofit's work of
             educating and empowering North Carolinians on public issues
@@ -30,7 +30,8 @@ export const ProductShowcase = () => {
           <p className="text-left section-description mt-5">
             From a black somber website to a responsive one that brings at the
             forefront Poder's colors, flair, and energy, the redesign sought to
-            increase website engagement and community.
+            increase Poder's engagement and community-building intitiative,
+            reaching their core audience of Gen Z and Millennials.
           </p>
         </div>
         <div className="relative">
