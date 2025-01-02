@@ -44,6 +44,10 @@ export const ProductShowcase = () => {
             increase Poder's engagement and community-building intitiative,
             reaching their core audience of Gen Z and Millennials.
           </p>
+          <p className="text-left section-description mt-5">
+            <strong>Skills</strong>: Design Strategy, User Research, User
+            Experience, User Interface, High-Fidelity Mockups
+          </p>
         </div>
         <div className="relative">
           <Image src={productImage} alt="Product Image" className="" />

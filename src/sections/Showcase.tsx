@@ -47,6 +47,10 @@ export const Showcase = () => {
             established design elements while staying true to the resources the
             health and legal groups refer to and need (right design).
           </p>
+          <p className="text-left section-description mt-5">
+            <strong>Skills</strong>: User Research, User Experience, User
+            Interface, Low-Fidelity Wireframes, High-Fidelity Mockups
+          </p>
         </div>
         <div className="relative">
           <Image src={productImageTablet} alt="Product Image Tablet" />
