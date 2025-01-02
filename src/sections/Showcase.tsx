@@ -36,10 +36,10 @@ export const Showcase = () => {
             page for health and legal clients to access the resources that
             benefit and inform their work. In going from the wireframe to the
             final design, I aimed to leverage the team’s existing design
-            language. So after studying and researching the best design layout
-            that suits the needs of the content - hyperlinks, an embedded
-            Airtable bug form, and a contact section - the Vamos "Help"
-            wireframe was born (left design).
+            language. After studying and researching the best design layout that
+            suits the needs of the content - hyperlinks, an embedded Airtable
+            bug form, and a contact section - the Vamos "Help" wireframe was
+            born (left design).
           </p>
           <p className="text-left section-description mt-5">
             Over the course of Vamos' redesign overhaul, I went in another
