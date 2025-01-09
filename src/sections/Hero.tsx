@@ -37,9 +37,15 @@ export const Hero = () => {
               Asaia Palacios
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              From building websites with code to designing sites, I am on a
-              journey to design accesssible and interactive 3D user experiences
+              From building apps with code to designing websites, I am on a
+              journey to design accessible and interactive 3D user experiences
               for smart wearable tech - augmented reality glasses!
+            </p>
+            <p className="text-xl text-[#010D3E] tracking-tight mt-4">
+              Currently in the exploratory phase, I aim to build human-centered
+              designs in 3D for extended reality experiences on Meta’s Quest VR
+              headset, navigating the Unity game engine, programming in C#, and
+              experimenting with AI integration. Be on the lookout for more!
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <Link href="#cta">
@@ -73,7 +79,7 @@ export const Hero = () => {
               width={195}
               height={195}
               alt="Cylinder image"
-              className="hidden md:block -top-10 -left-28 md:absolute lg:-left-14"
+              className="hidden md:block -top-24 -left-28 md:absolute lg:-left-14"
               style={{
                 translateY: translateY,
               }}
