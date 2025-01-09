@@ -49,10 +49,14 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <Link href="#cta">
-                <button className="btn btn-primary">Get in touch</button>
+                <button className="btn btn-primary hover:bg-white hover:text-black hover:border hover:border-black">
+                  Get in touch
+                </button>
               </Link>
               <Link href="#showcase">
-                <button className="btn btn-text">Learn more</button>
+                <button className="btn btn-text no-underline hover:underline">
+                  2D Work Showcase
+                </button>
               </Link>
             </div>
           </div>
