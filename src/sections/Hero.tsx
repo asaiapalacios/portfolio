@@ -49,7 +49,8 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <Link href="#cta">
-                <button className="btn btn-primary hover:bg-white hover:text-black hover:border hover:border-black">
+                {/* tentative button style: className="btn btn-primary hover:bg-white hover:text-black hover:border hover:border-black" */}
+                <button className="btn btn-primary transition-transform hover:scale-105 hover:shadow-lg">
                   Get in touch
                 </button>
               </Link>
